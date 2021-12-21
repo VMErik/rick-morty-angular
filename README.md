@@ -1,27 +1,33 @@
 # RickMortyApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1 , bootstrap  and Rickandmortyapi
 
-## Development server
+The project is a two page application.
+1) In the first to all the characters that appear in the Rick and Morty series.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2) We can view details of the character such as gender, location, status and a detail of the episodes in which it appears, the name and the air date of the same.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This is a list of characters
+![alt text](https://github.com/VMErik/rick-morty-angular/blob/master/src/img/rm-principal.PNG)
 
-## Build
+This is a detail page
+![alt text](https://github.com/VMErik/rick-morty-angular/blob/master/src/img/rm-detail.PNG)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## RICK AND MORTY API
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To carry out this exercise we use the api:
+https://rickandmortyapi.com/
+It is free to use
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## What will we learn?
+In this project we will learn the basic functionality of angular.
+* Implementation of services.
+* Interaction of our layout file in HTML with our typescript files.
+* Models
+* MAP (Basic)
+* Models
+* Routing
+* Parameters
