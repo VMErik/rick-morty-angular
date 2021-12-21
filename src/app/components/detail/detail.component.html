@@ -1,0 +1,29 @@
+<div class="container mt-5 p-5">
+    <div class="row m-0">
+        <div class="col-md-8">
+            <h4>General Information</h4>
+            <hr>
+            <h5> Name : {{ infoCharacter?.name }} </h5>
+            <h6> Origin : {{ infoCharacter?.origin?.name }} </h6>
+            <h6> Gender : {{ infoCharacter?.gender }} </h6>
+            <h6> Species : {{ infoCharacter?.species }} </h6>
+            <h6> Status : {{ infoCharacter?.status }} </h6>
+            <h6> Location : {{ infoCharacter?.location?.name }} </h6>
+
+            <br>
+            <h4>Episodes : </h4>
+            <hr>
+            <h6> Click in a episode for get more info.. </h6>
+            <span class="badge rounded-pill bg-success m-1 episode" (click)="moreInformation(item)" *ngFor="let item of infoCharacter?.episode"> {{ item | cleanString }} </span>
+            <hr>
+            <div class="col-md-12 fadeIn" *ngIf="episodeSelected != null">
+                <h6> Episode Selected : {{ episodeSelected.id }} </h6>
+                <h6> Name : {{ episodeSelected.name }} </h6>
+                <h6> On air in : {{ episodeSelected.air_date }} </h6>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <img [src]="infoCharacter?.image" alt="">
+        </div>
+    </div>
+</div>

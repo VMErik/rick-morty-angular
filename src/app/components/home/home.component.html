@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row justify-content-md-center pt-5">
+        <div class="col col-lg-2">
+            <button type="button" *ngIf="pageNumber > 1" class="btn btn-dark" (click)="getPrevious()">Previous Page</button>
+        </div>
+        <div class="col-md-auto">
+            <img src="../../../assets/img/rick_morty.png" alt="" width="150" height="54" class="rounded mx-auto d-block">
+        </div>
+        <div class="col col-lg-2 ">
+            <button type="button" class="btn btn-dark" (click)="getNext()"> Next Page</button>
+        </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+        <div (click)="viewCharacter(item)" class="card col-md-3 m-3 text-center fadeIn" *ngFor="let item of characters">
+            <img [src]="item.image" class="card-img-top" alt="...">
+            <div class="card-body align-center">
+                <h5 class="card-title"> {{ item.name | uppercase }} </h5>
+                <hr>
+                <a (click)="getPrevious()" class="btn btn-success">More info...</a>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-md-center pt-5">
+        <div class="col col-lg-2">
+            <button type="button" *ngIf="pageNumber > 1" class="btn btn-dark" (click)="getPrevious()">Previous Page</button>
+        </div>
+        <div class="col-md-auto">
+            <img src="../../../assets/img/rick_morty.png" alt="" width="150" height="54" class="rounded mx-auto d-block">
+        </div>
+        <div class="col col-lg-2">
+            <button type="button" class="btn btn-dark" (click)="getNext()">Next Page</button>
+        </div>
+    </div>
+</div>
