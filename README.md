@@ -1,33 +1,30 @@
 # RickMortyApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1 , bootstrap  and Rickandmortyapi
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1 , bootstrap  y Rickandmortyapi
 
-The project is a two page application.
-1) In the first to all the characters that appear in the Rick and Morty series.
+Este proyecto es una aplicacion de dos paginas
+1) En la primer pagina se muestran todos los personaje de la serie de una forma paginada. (Puedes modificar la cantidad de personajes a mostrar en el codigo de la aplicacion)
 
-2) We can view details of the character such as gender, location, status and a detail of the episodes in which it appears, the name and the air date of the same.
+2) Al dar clic en algun personaje puedes visualizar informacion del personaje seleccionado, tales como genero, localizacion, estatus y el detalle de los episodios en los que tiene aparicion este personaje (nombre del episodio, y la fecha de lanzamiento al aire).
 
-
-This is a list of characters
+Lista de todos los personajes
 ![alt text](https://github.com/VMErik/rick-morty-angular/blob/master/src/img/rm-principal.PNG)
 
-This is a detail page
+Vista del detalle de información
 ![alt text](https://github.com/VMErik/rick-morty-angular/blob/master/src/img/rm-detail.PNG)
 
 
-## RICK AND MORTY API
-
-To carry out this exercise we use the api:
+## API DE  RICK AND MORTY 
+Para poder realizar este ejercicio utilice la siguiente API:
 https://rickandmortyapi.com/
-It is free to use
+Es de uso libre y de facil implementación.
 
 
-## What will we learn?
-In this project we will learn the basic functionality of angular.
-* Implementation of services.
-* Interaction of our layout file in HTML with our typescript files.
-* Models
-* MAP (Basic)
-* Models
+## Que aprenderemos?
+Aprenderemos de una forma muy basica y sencilla el funcionamiento de Angular.
+* Implementacion de servicios
+* Comunicación de nuestro archivo typescript con nuestro archivo HTML para brindar dinamismo a las paginas
+* Uso de modelos 
+* Uso del operador MAP(basico)
 * Routing
-* Parameters
+* Parametros por medio de la URL
